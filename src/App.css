@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgb(149, 87, 247);
+}
+.MapImg{
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+  position:absolute;
+  overflow: hidden;
+}
+.nav{
+   position: relative;
+   display: flex;
+   align-items: center;
+   background-color: rgb(0, 0, 0,0.3);
+   
+}
+.logo{
+  width: 8vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbtn{
+  padding: 10px;
+  color: white;
+  background-color: rgb(158, 59, 239);
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: none;
+  margin-left:70rem;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.iphone{
+  position: relative;
+  height: 60vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Minlogo{
+  width: 8vw;
+}
+.foodie{
+  display: flex;
+  justify-content: space-evenly;
+  color:white;
+  font-weight: bold;
+  align-items: center;
+  margin-top: 20px;
+}
+.para{
+  font-weight: bolder;
+}
+.welcome{
+  position: relative;
+}
+.join{
+  padding: 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: none;
+  font-weight: bold;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.welcome h1{
+   font-size: xx-large;
+}
+.form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 30px;
+}
+.head{
+  margin-top: 3rem;
+  text-align: center;
+  font-size: xx-large; 
+}
+.input{
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 7%;
+  justify-content: space-evenly;
+}
+.inputBox{
+  padding: 20px;
+  border-radius:30px ;
+  border: none;
+}
+.formbtn{
+  display: flex;
+  align-items: center;
+  padding: 20px;
   color: white;
+  background-color: rgb(158, 59, 239);
+  border-radius: 30px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer; 
+}
+.you{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: xx-large;
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 6rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+@media (max-width: 600px) {
+  .logo {
+    width: 26vw;
+}
+.navbtn{
+  display: none;
+}
+.foodie{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  align-items: center;
+}
+.welcome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+}
+.MapImg {
+  width: 100vw;
+    height: 150vh;
+}
+.Minlogo{
+  display: none;
+}
+.head{
+  margin-top: 5rem;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
